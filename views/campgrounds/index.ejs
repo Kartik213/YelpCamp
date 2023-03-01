@@ -1,0 +1,25 @@
+
+<% layout('./layouts/boilerplate') %>
+<!-- all this contnet will be passed to the boilerplate and will be inserted right there-->
+<h1>All Campgrounds</h1>
+    <% for(let campground of campgrounds){ %>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="<%= campground.images[0].url %>" alt="" class="img-fluid" style="width: 350px; height: auto;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= campground.title %></h5>
+                        <p class="card-text"><%= campground.description %></p>
+                        <p class="card-text">
+                            <small class="text-muted"><%= campground.location %></small>
+                        </p>
+                        <a href="campgrounds/<%= campground._id %>" class="btn btn-primary"> View <%= campground.title %> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+
+
