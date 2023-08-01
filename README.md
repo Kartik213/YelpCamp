@@ -19,7 +19,7 @@ To get started with YelpCamp follow these steps:
 
 1. Clone the git repository:
 ```bash
-    git clone https://github.com/binaryC0der/YelpCamp.git
+    git clone https://github.com/Kartik213/yelpCamp.git
 ```
 2. Install the dependencies:
 ```bash
